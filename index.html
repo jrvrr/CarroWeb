@@ -9,7 +9,34 @@
 </head>
 <body>
     <div class="car">
+
+        <audio id="miAudio" src="assets/plan b.mp3"></audio>
+
+        <div class="hood" id="hood"></div>
+        <div class="bell" id="bell"></div>
+
+        <div class="puerta"  id="puerta"></div>
+
+
+        <div class="bordercar"></div>
+        <div class="bordercarmiddle"></div>
+        <div class="bordercarend"></div>
+
+        <div class="borderroof-left"></div>
+        <div class="borderroof-right"></div>
+
+
+        <div class="borderexternal"></div>
+        <div class="borderdoor"></div>
+
+        <div class="fender">
+            <div class="fender left"></div>
+            <div class="fender right"></div>
+            
+        </div>
+        <div class="diagonal"></div>
         <div class="window">
+            <div class="section"></div>
             <div class="left"></div>
             <div class="right"></div>
         </div>
@@ -21,10 +48,25 @@
         <div class="wheel rear">
             <img src="/images/llanta.png" alt="">
         </div>
-        <div class="headlight"></div>
-        <div class="taillight"></div>
+        <div class="headlight"  id="headlight"></div>
+        <div class="taillight" id="taillight"></div>
+        <div class="secondarylight" id="secondarylight"></div>
         <div class="roof"></div>
         <div class=""></div>
     </div>
+
+    <div class="controls">
+        <button id="togglePuerta">Abrir/Cerrar Puerta</button>
+        <button onclick="toggleBell()">Abrir/Cerrar maletero</button>
+        <button onclick="toggleHood()">Abrir/Cerrar Cofre</button>
+        <button onclick="toggleHeadlights()">Encender/Apagar Faros</button>
+        <button onclick="toggleTaillights()">Encender/Apagar Luces Traseras</button>
+        <button onclick="toggleSecondarylights()">Encender/Apagar Luces Secundarias</button>
+        <button id="btnMusica" onclick="toggleMusica()">▶️ Reproducir</button>
+
+    </div>
+
 </body>
+<script src="/js/script.js"></script>
+
 </html>
